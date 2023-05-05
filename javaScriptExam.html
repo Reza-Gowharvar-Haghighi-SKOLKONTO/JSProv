@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Prov</title>
+</head>
+<body>
+
+    <!-- Fråga 5 -->
+    <form>
+
+        <label for="textarea">Skriv här</label>
+        <input type="text" name="textarea" id="textarea">
+        <button onclick="Submit()">Submit</button>
+
+    </form>
+    
+    <script>
+
+       /* Fråga 3 */
+
+       function multiplier5(list)
+       {
+        
+        const newList = [];
+        
+        for (i of list)
+        {
+         newList.push(i * 5);
+        }
+
+        return newList;
+
+       }
+
+       const answer = multiplier5([1, 2, 3, 4, 5]);
+
+       console.log(answer);
+
+       /* Fråga 4 */
+
+       function multiplication(num1, num2)
+        {
+        
+         if (typeof(num1) != "number" || typeof(num2) != "number")
+         {
+
+            return "one or both of the variables are not numbers";
+
+         }
+
+         else 
+         {
+
+            return num1 * num2;
+
+         }
+    
+        }
+        
+        var multi = multiplication(3, 10);
+
+        console.log(multi);
+
+        /* Funktion för fråga 5 */
+        function Submit()
+        {
+          var item = document.getElementById["textarea"].value;
+
+          console.log(item)
+        }
+    </script>
+ 
+</body>
+</html>
